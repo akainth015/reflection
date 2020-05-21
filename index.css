@@ -158,12 +158,25 @@ img {
 
 .gallery div :not(img ) {
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 500ms, transform 500ms;
+    transform-origin: center;
+    transform: scale(1.2);
     z-index: 3;
 }
 
 .gallery div:hover :not(img) {
+    transform: scale(1);
     opacity: 1;
+}
+
+.gallery div img {
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 500ms;
+}
+
+.gallery div:hover img {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 550px) {
