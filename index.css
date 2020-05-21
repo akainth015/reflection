@@ -103,6 +103,12 @@ section h1 {
     font-size: 2rem;
 }
 
+section:not(#hero) > h1:hover:after {
+    content: "#";
+    color: gray;
+    margin-left: 16px;
+}
+
 @media screen and (max-width: 370px) {
     header h1 {
         padding-right: 0 !important;
