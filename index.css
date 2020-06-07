@@ -61,21 +61,6 @@ header img {
     padding: 16px;
 }
 
-#rleaf {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    transform: rotate(0deg);
-}
-
-#lleaf {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    /*transform: translate(-100%, -50%) rotate(180deg);*/
-}
-
 #hero {
     text-align: center;
     /*background: url("");*/
